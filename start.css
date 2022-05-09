@@ -76,7 +76,8 @@ nav{
 
 .nav-logo a {
     text-decoration: none;
-    color: white
+    color: white;
+}
 
 nav ul {
     flex: 1;
