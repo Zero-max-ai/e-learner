@@ -68,12 +68,15 @@ nav{
 }
 
 .nav-logo {
-    color: white;
     cursor: pointer;
     font-size: 30px;
     font-weight: 500;
     font-variant: small-caps;
 }
+
+.nav-logo a {
+    text-decoration: none;
+    color: white
 
 nav ul {
     flex: 1;
