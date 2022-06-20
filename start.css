@@ -158,7 +158,8 @@ nav ul li a:hover {
 
 .main {
     align-items: center;
-    height: 50vh;
+    height: 70vh;
+    justify-content: center;
 }
 
 .start-changer {
