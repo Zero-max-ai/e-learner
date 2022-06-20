@@ -157,6 +157,8 @@ nav ul li a:hover {
 }
 
 .main {
+    display: inline-block;
+    width: 100%;
     align-items: center;
     height: 70vh;
     justify-content: center;
