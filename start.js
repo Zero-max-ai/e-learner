@@ -1,3 +1,10 @@
+// loader
+var loader = document.getElementById("preloader");
+window.addEventListener("load",function(){
+    loader.style.display = "none"
+})
+// end loader
+
 // Relace text js
 let typed = new Typed(".auto-input", {
   strings: ["HTML", "CSS", "JAVA"],
