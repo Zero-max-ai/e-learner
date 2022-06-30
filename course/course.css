@@ -1,0 +1,247 @@
+:root {
+  --body-font: "Raleway",Arial,sans-serif;
+  --menu-font: "Raleway",Arial,sans-serif;
+  --title-font: "Raleway",Arial,sans-serif;
+  --meta-font: "Raleway",Arial,sans-serif;
+  --text-font: "Raleway",Arial,sans-serif;
+  --body-bg-color: #f5f6f7;
+  --body-bg: #f5f6f7 none no-repeat scroll center center;
+  --outer-bg: #ffffff;
+  --main-color: #6c6cfe;
+  --title-color: #171c24;
+  --title-hover-color: #6c6cfe;
+  --meta-color: #a9b4ba;
+  --text-color: #5b6c77;
+  --tag-color: #6c6cfe;
+  --header-bg: #171c24;
+  --header-color: #ffffff;
+  --header-hover-color: #6c6cfe;
+  --submenu-bg: #ffffff;
+  --submenu-color: #171c24;
+  --submenu-hover-color: #6c6cfe;
+  --megamenu-bg: #ffffff;
+  --megamenu-color: #171c24;
+  --megamenu-hover-color: #6c6cfe;
+  --mobilemenu-bg: #ffffff;
+  --mobilemenu-color: #171c24;
+  --mobilemenu-hover-color: #6c6cfe;
+  --hero-bg: #6c6cfe;
+  --hero-color: #ffffff;
+  --hero-text-color: #f0f0fa;
+  --hero-search-color: #ffffff;
+  --widget-title-color: #171c24;
+  --post-title-color: #171c24;
+  --post-title-hover-color: #6c6cfe;
+  --post-text-color: #5b6c77;
+  --footer-bg: #1e232b;
+  --footer-color: #ffffff;
+  --footer-hover-color: #6c6cfe;
+  --footer-post-title-color: #ffffff;
+  --footer-post-title-hover-color: #6c6cfe;
+  --footer-text-color: #aaaaaa;
+  --footerbar-bg: #171c24;
+  --footerbar-color: #ffffff;
+  --footerbar-hover-color: #6c6cfe;
+  --button-bg: #6c6cfe;
+  --button-color: #ffffff;
+  --button-hover-bg: #6161e4;
+  --button-hover-color: #ffffff;
+  --border-color: rgba(155,155,155,0.15);
+  --bb-color: rgba(0,0,0,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* loader */
+#preloader {
+  background: #000 url(../sharingan.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/* navbar start*/
+header {
+  background-color: var(--megamenu-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 500;
+  font-variant: small-caps;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  flex: 1;
+  text-align: center;
+  padding-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: lightblue;
+  border: 1px solid aquamarine;
+  border-radius: 4px;
+}
+
+.login {
+  color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: yellow;
+}
+
+.sign {
+  color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: red;
+}
+
+.login:hover, .sign:hover {
+  background-color: transparent;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* course-container */
+
+.course-container {
+  background-color: #6161e4;
+  height: 90vh;
+}
+
+.course-container h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 20px 0 0 20px;
+}
+
+.course {
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html, .css, .c {
+  padding: 45px;
+  border: 1px solid white;
+  margin: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1e232b;
+}
+
+
+
+
+
+
+/* 1st mobile responsive part */
+@media only screen and (max-width: 1700px) {
+  ul {
+    width: 100%;
+    line-height: 50px;
+    z-index: 1;
+  }
+
+  .navlinks {
+    display: inline-flex;
+    position: fixed;
+    left: -150%;
+    top: 4rem;
+    flex-direction: column;
+    background-color: var(--megamenu-color);
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+  }
+
+  .navlinks.active {
+    left: 0;
+  }
+
+  li {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    left: 70%;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    left: 30%;
+  }
+
+}
